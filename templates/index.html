@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Detection</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>Real-Time Detection</h1>
+    <div id="video">
+        <img id="videoFeed" src="{{ url_for('video_feed') }}" width="640px" />
+    </div>
+
+    <div id="buttons">
+        <button id="startOpen" onclick="startCapture('open')">Start Open Door Capture</button>
+        <button id="startClosed" onclick="startCapture('closed')">Start Closed Door Capture</button>
+        <button id="stopCapture" onclick="stopCapture()">Stop Capture</button>
+        <button id="startTraining" onclick="startTraining()">Start Training Model</button>
+    </div>
+
+    <div id="trainingLogs">
+        <h2>Training Logs</h2>
+        <pre id="logs"></pre>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

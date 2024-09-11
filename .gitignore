@@ -1,0 +1,36 @@
+# Ignore Python cache and virtual environment files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+.ipynb_checkpoints/
+*.sqlite3
+*.log
+
+# Ignore runs directory (where training outputs are saved)
+runs/
+
+# Ignore data directory (where images and labels are stored)
+data/
+
+# Ignore system files
+.DS_Store
+*.swp
+*.swo
+
+# Ignore sensitive file paths or configuration files
+settings.yaml
+config.yaml
+
+# Ignore any files with absolute file paths
+door.yaml
+
+# Ignore virtual environment files (if applicable)
+yolov8_attempt_1_env/
+
+trained_door_model.pt
+yolov8n.pt
